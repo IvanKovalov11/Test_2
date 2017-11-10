@@ -46,11 +46,11 @@ void Sort(int *arr, int n, int sdv)
 	{
 		swap(arrL[i], arrL[n - sdv - 1 - i]);
 	}
-	for (i = 0; i<sdv / 2; ++i) 
+	for (i = 0; i < sdv / 2; ++i) 
 	{
 		swap(arrR[i], arrR[sdv - 1 - i]);
 	}
-	for (i = 0; i<n; ++i) 
+	for (i = 0; i < n; ++i) 
 	{
 		if (i < n - sdv) 
 		{
