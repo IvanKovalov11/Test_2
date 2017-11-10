@@ -40,7 +40,7 @@ void printArray(int arr[], int size)
 
 int main()
 {
-	unsigned int size;
+	int size;
 	string number;
 	getline(cin, number);
 	istringstream stream(number);
