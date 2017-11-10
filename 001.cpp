@@ -6,17 +6,22 @@
 
 using namespace std;
 
-bool read(int *array, unsigned int size)
+bool read(int *array, int size)
 {
 	string stroka;
 	getline(cin, stroka);
 	istringstream stream(stroka);
-	for (unsigned int i = 0; i < size; ++i)
+	for (int i = 0; i < size; ++i)
 	{
 		if (!(stream >> array[i]))
 		{
 			cout << "An error has occured while reading input data." << endl;
 			return false;
+		}
+		if (!(stream.eof()))
+		{
+		   cout << "An error has occured while reading input data." << endl;
+		   return false; 
 		}
 	}
 	return true;
