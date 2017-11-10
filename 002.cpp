@@ -18,11 +18,6 @@ bool read(int *array, unsigned int size)
 			cout << "An error has occured while reading input data." << endl;
 			return false;
 		}
-		if (!(stream.eof()))
-		{
-			cout << "An error has occured while reading input data." << endl;
-			return false;
-		}
 	}
 	return true;
 }
@@ -105,7 +100,6 @@ int main()
 		cout << "Sorted array: \n";
 		printArray(arr, size);
 	}
-
 	cin.get();
 	return 0;
 }
